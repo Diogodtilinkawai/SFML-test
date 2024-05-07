@@ -16,5 +16,6 @@ class Grid{
     void update();
     void drawTo(RenderWindow &window);
     void click(int x, int y);
+    int contarVecinos(int i, int j);
 };
 #endif
