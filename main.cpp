@@ -8,6 +8,7 @@ Grid grid(numCells, numCells, width, height);
 int main()
 {
     RenderWindow window(VideoMode(width, height), "SFML works!");
+    window.setFramerateLimit(5);
     CircleShape shape(100.f);
     shape.setFillColor(Color::Green);
 
@@ -32,6 +33,7 @@ int main()
         }
 
         window.clear(Color(51,51,51));
+        grid.update();
         grid.drawTo(window);
        // window.draw(shape);
         window.display();
